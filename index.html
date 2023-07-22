@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Nejat Sultan - Portfolio</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <!-- <script src="script.js"></script> -->
+</head>
+<body>
+    <header class="header">
+        <a href="#" class="logo"> Nejat Sultan </a>
+
+        <i class="bx bx-menu" id="menu-icon"></i>
+
+        <nav class="navbar">
+            <a href="#home" class="active">Home</a>
+            <a href="#about">About</a>
+            <a href="#services">Services</a>
+            <a href="#portfolio">Portfolio</a>
+            <a href="#contact">Contact</a>
+            
+        </nav>
+    </header>
+
+    <!-- Home section -->
+    <section class="home" id="home">
+        <div class="home-content">
+            <h3> Hello, Its me</h3>
+            <h1> Nejat Sultan </h1>
+            <h3> And I'm a <span class="text"></span></h3>
+            <p>I'm a software developer with experience for over 3 years.
+                <br> Experienced in creating a website design, software development and many more...
+            </p>
+            <div class="home-social">
+                <a href="https://www.facebook.com/nejat_sultan"><i class='bx bxl-facebook'></i></a>
+                <a href="https://www.instagram.com/nejat_sultan/"><i class='bx bxl-instagram'></i></a>
+                <a href="https://www.twitter.com/neju_sultan"><i class='bx bxl-twitter'></i></a>
+            </div>
+            <a href="Nejat's Resume.pdf" download class="btn btn2"> Download CV </a>
+        </div>
+
+        <div class="home-img">
+            <img src="images/mine1 copy 1.jpg" alt="">
+        </div>
+
+    </section>
+
+    <!-- About section -->
+    <section class="about" id="about">
+        <div class="about-img">
+            <img src="images/mine2 copy.jpg" alt=""> 
+        </div>
+        <div class="about-content"> 
+            <h2 class="heading"> About <span>Me</span> </h2>
+            <h3> Software Developer </h3>
+            <p> I have two years of experience as a Software developer. In previous jobs, I was in charge of creating visually attractive front-end designs. However, I have been also working with back-end design. Working on both ends increased my understanding of the fundamentals. My expertise is in HTML, CSS, JavaScript, React, Bootstrap, PHP, C# and WordPress. Recently, I have been learning Azure and other cloud related technologies. I am a quick learner who can complete projects to the specifications of my clients. I am a flexible person who completes tasks in accordance with the needs of my customers. I am committed to completing my responsibilities on time and be succeeding.  </p>
+            <!-- <a href="#" class="btn"> Read More </a> -->
+            
+            <div class="tab-titles">
+                <h6 class="tab-links active-link" onclick="opentab('education')">Education</h6>
+                <h6 class="tab-links" onclick="opentab('experience')">Experience</h6>
+                <h6 class="tab-links" onclick="opentab('skills')">Skills</h6>
+            </div>
+            <div class="tab-contents active-tab" id="education">
+                <ul>
+                    <li><span>2016 - 2020</span><br> Bachelor's Degree in computer science at HiLCoE School Of Computer Science and Technology </li>
+                    <li><span>2021 - present</span><br> Master’s Degree in computer science at ACT American College of Technology </li>
+                </ul>
+            </div>
+            <div class="tab-contents" id="experience">
+                <ul>
+                    <li><span>2020 - 2022</span><br> Front-End Website Developer at KEN-Techno</li>
+                    <li><span>2022 – present</span><br> Azure Cloud Specialist at Nedamco Capital</li>
+                </ul>
+            </div>
+            <div class="tab-contents" id="skills">
+                <ul>
+                    <li><span>HTML</span></li>
+                    <li><span>CSS</span></li>
+                    <li><span>Javascript</span></li>
+                    <li><span>Wordpress</span></li>
+                    <li><span>PHP</span></li>
+                    <li><span>Others</span></li>
+                </ul>
+            </div>
+
+        </div>   
+    </section>
+
+    <!-- Services section -->
+    <section class="services" id="services">
+        <h2 class="heading"> Our <span> Services </span></h2>
+
+        <div class="services-container">
+            <div class="services-box">
+                <i class="bx bx-code-alt"></i>
+                <h3> Website Development </h3>
+                <p> Creative and professional web design is one of the most important features <span id="dots">...</span><span id="more"> of a website and I Develop Responsive Websites for your business that displays your content in a beautiful way. </p>
+                <!-- <a href="#" class="btn"> Read More</a> -->
+                <button onclick="myFunction()" id="myBtn" class="btn"> Read More </button>
+            </div>
+            <div class="services-box">
+                <i class='bx bx-cloud-upload'></i>
+                <h3> Cloud Consulting </h3>
+                <p> Designing and implementing Azure as well as related technologies, Developing <span id="dots1">...</span><span id="more1"> and implementing a cloud strategy, Assessing, building, and implementing reliable Azure solutions </p>
+                <button onclick="myFunction1()" id="myBtn1" class="btn"> Read More </button>
+            </div>
+            <div class="services-box">
+                <i class="bx bx-laptop"></i>
+                <h3> Software Development</h3>
+                <p> I am ready to take over your projects and develop software solutions with full <span id="dots2">...</span><span id="more2"> warranty and support. I focus on solutions that improve my customer’s business performance by offering fast & reliable solutions. </p>
+                <button onclick="myFunction2()" id="myBtn2" class="btn"> Read More </button>
+            </div>
+        </div>
+        
+    </section>
+
+    <!-- Portfolio section -->
+    <section class="portfolio" id="portfolio">
+        <h2 class="heading"> Latest <span> Projects </span></h2>
+
+        <div class="portfolio-container">
+            <div class="portfolio-box">
+                <img src="images/feshta.png" alt="">
+                <div class="portfolio-layer">
+                    <h4> Software Development </h4>
+                    <p> An Event Organizing software with a payment integration. </p>
+                    <a href="http://feshta.com/"> <i class="bx bx-link-external"></i></a>
+                </div>
+            </div>
+
+            <div class="portfolio-box">
+                <img src="images/monarch.png" alt="">
+                <div class="portfolio-layer">
+                    <h4> Website Design </h4>
+                    <p> A Website design and development for Monarch Hotel. </p>
+                    <a href="https://monarchaddis.com/"> <i class="bx bx-link-external"></i></a>
+                </div>
+            </div>
+
+            <div class="portfolio-box">
+                <img src="images/hanan.png" alt="">
+                <div class="portfolio-layer">
+                    <h4> Website Design </h4>
+                    <p> A Wordpress website development for Hanan Bakery. </p>
+                    <a href="https://hananplc.theforestwater.com/"> <i class="bx bx-link-external"></i></a>
+                </div>
+            </div>
+
+            <div class="portfolio-box">
+                <img src="images/employee.png" alt="">
+                <div class="portfolio-layer">
+                    <h4> Software Development </h4>
+                    <p> An Employee Management system that have access for both the admin and user. </p>
+                    <a href="#"> <i class="bx bx-link-external"></i></a>
+                </div>
+            </div>
+
+            <div class="portfolio-box">
+                <img src="images/auction.png" alt="">
+                <div class="portfolio-layer">
+                    <h4> Software Development </h4>
+                    <p> An online Auction system for different kinds of goods. </p>
+                    <a href="#"> <i class="bx bx-link-external"></i></a>
+                </div>
+            </div>
+
+            <div class="portfolio-box">
+                <img src="images/forest.png" alt="">
+                <div class="portfolio-layer">
+                    <h4> Website Design </h4>
+                    <p> A wordpress website development for forest water factory. </p>
+                    <a href="https://theforestwater.com/"> <i class="bx bx-link-external"></i></a>
+                </div>
+            </div>
+            
+        </div>
+        
+    </section>
+
+    <!-- Contact section -->
+    <section class="contact" id="contact">
+        <h2 class="heading"> Contact <span> Me!</span></h2>
+
+        <form action="">
+            <div class="input-box">
+                <input type="text" placeholder="Full Name" required>
+                <input type="email" placeholder="Email Address" required>
+            </div>
+            <div class="input-box">
+                <input type="number" placeholder="Mobile Number">
+                <input type="text" placeholder="Email Subject">
+            </div>
+            <textarea name="" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
+            <input type="submit" value="Send Message" class="btn">
+        </form>
+        
+    </section>
+
+   <!--  Footer  -->
+   <footer class="footer">
+        <div class="footer-text">
+            <p> Copyright &copy; 2023 by Nejat | All Rights Reserved. </p>
+        </div>
+
+        <div class="footer-iconTop">
+            <a href="#home"><i class="bx bx-up-arrow-alt"></i></a>
+        </div>
+       
+   </footer>
+
+    <script src="script.js"></script>
+    
+</body>
+</html>
